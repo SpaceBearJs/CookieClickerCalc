@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flatly.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-2">Calculadora de Cookie Clicker</h1>
+    </div>
+    <div class="row justify-content-md-center my-5">
+      <div class="col-md-6 row  my-2">
+        <div class="col-md-6">
+        <div class="form-group">
+            <h3 class="text-center">Cantidad Menor</h3>
+        </div>
+          <div class="form-group">
+            <label class="col-form-label mt-3" for="Galleta1">Galleta x Segundo</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Galleta por segundo"
+              id="Galleta1"
+              required
+            />
+          </div>
+          <div class="form-group">
+              
+            <label class="col-form-label mt-3" for="Precio1">Precio</label>
+            
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Precio 1"
+              id="Precio1"
+              required
+            />
+          </div>
+
+          <div class="form-group resultados1">
+            <label class="col-form-label mt-3" for="Resultado1">Resultado</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Resultado1"
+              disabled
+            />
+          </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <h3 class="text-center">Cantidad Mayor</h3>
+            </div>
+          <div class="form-group">
+            <label class="col-form-label mt-3" for="Galleta2">Galleta x Segundo</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Galletas por segundo"
+              id="Galleta2"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="col-form-label mt-3" for="Precio2">Precio</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Precio 2"
+              id="Precio2"
+              required
+            />
+          </div>
+          <div class="form-group resultados2">
+            <label class="col-form-label mt-3" for="Resultado1">Resultado</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Resultado2"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-2 text-center">
+          <button type="button" class="btn btn-warning" onclick="calcular()">Calcular</button>
+          
+        </div>
+        <div class="col-md-2 text-center">
+            <button type="button" class="btn btn-secondary" onclick="siguiente()">Siguiente</button>
+          </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 my-4 alertasCont">
+        </div>
+    </div>
+    <style>
+      .justify-content-md-center {
+        width: 100vw !important;
+      }
+    </style>
+    <script src="main.js"></script>
+  </body>
+</html>
